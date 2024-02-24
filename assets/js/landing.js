@@ -116,10 +116,7 @@ gltLoader.load(
     (gltf) => {
         anuncio = gltf.scene
 
-        anuncio.position.x = 0
-        anuncio.rotation.y = -0.5
-
-        const radius = 0.18
+        const radius = 0.4
         anuncio.scale.set(radius, radius, radius)
 
         scene.add(anuncio)
@@ -244,8 +241,7 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.shadowMap.enabled = true
 renderer.shadowMap.type = THREE.PCFSoftShadowMap
-renderer.setSize(sizes.width, sizes.height)
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+renderer.setSize(sizes.width, sizes.height * 0.2)
 renderer.render(scene, camera)
 
 

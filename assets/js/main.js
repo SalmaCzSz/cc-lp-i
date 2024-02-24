@@ -90,11 +90,4 @@
           navbarToggler.classList.toggle("active");
           navbarCollapse.classList.toggle('show')
         })
-  
-        //WOW Scroll Spy
-        var wow = new WOW({
-          //disabled for mobile
-          mobile: false
-        });
-        wow.init();
   })();
