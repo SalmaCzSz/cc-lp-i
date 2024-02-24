@@ -48,13 +48,13 @@
             <!-- Navbar End -->
           </header>
 
-        <section id="inicio" class="bg-dark-blue pt-48 pb-10">
+        <section id="inicio" class="bg-dark-blue pt-48 pb-10 py-2">
             <div class="container">
                 <div class="flex justify-between">
                     <div class="w-full lg:w-1/2">
-                        <h2 class="text-5xl font-bold leading-snug text-white wow fadeInUp" data-wow-delay="0.5s">Clear Channel</h2>
-                        <h2 class="text-3xl font-bold leading-snug text-white mb-10 wow fadeInDown" data-wow-delay="1s"> Where <span class="text-bright-yellow">brands</span> meet <span class="text-bright-aqua">people</span>.</h2>
-                        <p class="text-1xl leading-snug text-white mb-10 wow fadeInDown" data-wow-delay="1.5s">
+                        <h2 class="text-5xl font-bold leading-snug text-white">Clear Channel</h2>
+                        <h2 class="text-3xl font-bold leading-snug text-white mb-10"> Where <span class="text-bright-yellow">brands</span> meet <span class="text-bright-aqua">people</span>.</h2>
+                        <p class="text-1xl leading-snug text-white mb-10">
                             Conectamos marcas y personas globalmente. Con un portafolio diverso,
                             creamos campañas poderosas, utilizando datos de ubicación para
                             iniciar conversaciones impactantes fuera de casa.
@@ -67,80 +67,227 @@
             </div>
         </section>
 
-        <!-- Contact Section Start -->   
-        <section id="contacto" class="bg-dark-blue pb-10">
+        <!-- Pricing section Start --> 
+        <section id="productos" class="bg-dark-blue">
             <div class="container">
-                <div class="bg-bright-blue rounded">
-                    <div class="text-center">
-                        <h2 class="section-heading mb-3">Contacto</h2>
-                    </div>
-                    <div class="flex mb-10">
-                        <div class="w-full md:w-1/2">
-                            <div class="contact ml-3">
-                                <h2 class="uppercase font-bold text-xl text-white mb-5 ml-3">Contactános</h2>
-                                <form id="contactForm" action="assets/contact.php">
-                                    <div class="flex flex-wrap">
-                                        <div class="w-full sm:w-1/2 md:w-full lg:w-1/2">
-                                            <div class="mx-3">
-                                                <input type="text" class="form-input rounded-full" id="name" name="name" placeholder="Nombre" required data-error="Please enter your name">
-                                            </div>                                 
-                                        </div>
-                                        <div class="w-full sm:w-1/2 md:w-full lg:w-1/2">
-                                            <div class="mx-3">
-                                                <input type="text" placeholder="Correo" id="email" class="form-input rounded-full" name="email" required data-error="Please enter your email">
-                                            </div> 
-                                        </div>
-                                        <div class="w-full">
-                                            <div class="mx-3">
-                                                <input type="text" placeholder="Asunto" id="subject" name="subject" class="form-input rounded-full" required data-error="Please enter your subject">
-                                            </div>
-                                        </div>
-                                        <div class="w-full">
-                                            <div class="mx-3"> 
-                                                <textarea class="form-input rounded-lg" id="message" name="message" placeholder="Your Message" rows="5" data-error="Escribe tu mensaje" required></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="w-full">
-                                            <div class="submit-button mx-3 mb-3">
-                                                <button class="btn" id="form-submit" type="submit">Enviar Mensaje</button>
-                                            </div>
-                                        </div>
-                                    </div>            
-                                </form>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-1/2 ml-3">
-                            <div>
-                                <div class="flex flex-wrap  items-center">
-                                    <div class="contact-icon">
-                                        <i class="lni lni-map-marker"></i>
-                                    </div>
-                                    <p class="pl-3 text-white">
-                                        Blvd. Manuel Ávila Camacho 138 Piso 6, <br>
-                                        Col. Lomas de Chapultepec, CP 11000, CDMX.
-                                    </p>
-                                </div>
-                                <div class="flex flex-wrap items-center">
-                                    <div class="contact-icon">
-                                        <i class="lni lni-envelope"></i>
-                                    </div>
-                                    <p class="pl-3 text-white">
-                                        <a href="#" class="block">ventas@clearchannel.com.mx</a>
-                                    </p>
-                                </div>
-                                <div class="flex flex-wrap mb-6 items-center">
-                                    <div class="contact-icon">
-                                        <i class="lni lni-phone-set"></i>
-                                    </div>
-                                    <p class="pl-3 text-white">
-                                        <a href="#" class="block">+(52) 52810392</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <object style="border: 1; height: 50%; width: 95%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5536.631105162795!2d-99.21244878424163!3d19.43315388688401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2021f100761f7%3A0x665a310092ac534d!2sPiso+8%2C+Perif.+Blvd.+Manuel+%C3%81vila+Camacho+138%2C+Lomas+de+Chapultepec+V+Secc%2C+11000+Ciudad+de+M%C3%A9xico%2C+CDMX!5e1!3m2!1ses!2smx!4v1544071611242"></object>  
-                        </div>
-                    </div>
+                <div class="text-center">
+                    <h2 class="mb-12 section-heading">Productos</h2>
                 </div>
+                <div class="flex flex-wrap justify-center md:justify-start">
+                    <!-- single pricing table starts -->
+                    <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
+                        <div class="pricing-box bg-bright-yellow">
+                            <div class="mb-3">
+                            <h3 class="font-bold text-dark-blue">Basic</h3>
+                            </div>
+                            <div class="mb-5">
+                            <p class="text-white">
+                                <span class="font-bold text-2xl">$12.90</span>
+                                <span class="font-medium text-sm">/ Month</span>
+                            </p>
+                            </div>
+                            <ul class="mb-16">
+                                <li class="text-white leading-9">...</li>
+                                <li class="text-white leading-9">...</li>
+                                <li class="text-white leading-9">...</li>
+                            </ul>
+                            <a href="#" class="btn">Obtener</a>
+                        </div>
+                    </div>
+                    <!-- single pricing table ends -->
+                    <!-- single pricing table starts -->
+                    <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
+                        <div class="pricing-box bg-bright-yellow">
+                            <div class="mb-3">
+                            <h3 class="font-bold text-dark-blue">Profesional</h3>
+                            </div>
+                            <div class="mb-5">
+                            <p class="text-white">
+                                <span class="font-bold text-2xl">$49.90</span>
+                                <span class="font-medium text-sm">/ Month</span>
+                            </p>
+                            </div>
+                            <ul class="mb-16">
+                                <li class="text-white leading-9">...</li>
+                                <li class="text-white leading-9">...</li>
+                                <li class="text-white leading-9">...</li>
+                                <li class="text-white leading-9">...</li>
+                            </ul>
+                            <a href="#" class="btn">Obtener</a>
+                        </div>
+                    </div>
+                    <!-- single pricing table ends -->
+                    <!-- single pricing table starts -->
+                    <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
+                        <div class="pricing-box bg-bright-yellow">
+                            <div class="mb-3">
+                            <h3 class="font-bold text-dark-blue">Expert</h3>
+                            </div>
+                            <div class="mb-5">
+                            <p class="text-white">
+                                <span class="font-bold text-2xl">$89.90</span>
+                                <span class="font-medium text-sm">/ Month</span>
+                            </p>
+                            </div>
+                            <ul class="mb-16">
+                                <li class="text-white leading-9">...</li>
+                                <li class="text-white leading-9">...</li>
+                                <li class="text-white leading-9">...</li>
+                                <li class="text-white leading-9">...</li>
+                                <li class="text-white leading-9">...</li>
+                            </ul>
+                            <a href="#" class="btn">Obtener</a>
+                        </div>
+                    </div>
+                    <!-- single pricing table ends -->
+                </div>
+            </div>
+        </section>
+        <!-- Pricing Table Section End -->
+
+        <!-- Customer Section Start -->
+        <section id="clientes" class="py-16 bg-dark-blue text-center">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="mb-12 section-heading wow fadeInUp" data-wow-delay="0.3s">Clientes</h2>
+                </div>
+                <div class="flex flex-wrap justify-center">
+                    <!-- Team Item Starts -->
+                    <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">
+                        <div class="team-item">
+                            <div class="team-img relative">
+                                <img class="img-fluid" src="assets/img/customer/1.png" alt="">
+                                <div class="team-overlay">
+                                    <p class="flex justify-center px-5 py-3">
+                                    Sorprendimos a las mamás de México este 10 de Mayo.
+                                    Invitamos al público a enviar subir una foto con un mensaje dedicado a su mamá,
+                                    el resultado #LaMejorMadreDelMundo en los soportes digitales de Clear Channel México.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-center px-5 py-3">
+                                <h3 class="team-name">AT&T</h3>
+                                <p>La mejor madre del mundo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Item Ends -->
+                    <!-- Team Item Starts -->
+                    <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3 wow fadeInDown" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img relative">
+                                <img class="img-fluid" src="assets/img/customer/2.png" alt="">
+                                <div class="team-overlay">
+                                    <p class="flex justify-center px-5 py-3">
+                                    Una forma diferente de dar los marcadores en tiempo real con nuestras 
+                                    herramientas favoritas de casa, mira como lo hicimos en esta campaña de Unefon.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-center px-5 py-3">
+                                <h3 class="team-name">Unefon</h3>
+                                <p>Todo ilimitado</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Item Ends -->
+                    <!-- Team Item Starts -->
+                    <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3 wow fadeInDown" data-wow-delay="0.8s">
+                        <div class="team-item">
+                            <div class="team-img relative">
+                                <img class="img-fluid" src="assets/img/customer/3.png" alt="">
+                                <div class="team-overlay">
+                                    <p class="flex justify-center px-5 py-3">
+                                    Acompañamos a todos los participantes en la carrera Gatorade, 
+                                    en un circuito en exclusiva dando avisos a los participantes y guiando su viaje.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-center px-5 py-3">
+                                <h3 class="team-name">Gatorade</h3>
+                                <p>La carrera</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Item Ends -->
+                </div>
+            </div>
+        </section>
+        <!-- Customer Section End -->
+  
+
+        <!-- Contact Section Start -->   
+        <section id="contacto" class="bg-dark-blue pb-10 py-16">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading mb-12">Contacto</h2>
+                </div>
+                <div class="flex">
+                    <div class="w-full md:w-1/2">
+                        <div class="contact ml-3">
+                            <h2 class="uppercase font-bold text-xl text-white mb-5 ml-3">Contactános</h2>
+                            <form id="contactForm" action="assets/contact.php">
+                                <div class="flex flex-wrap">
+                                    <div class="w-full sm:w-1/2 md:w-full lg:w-1/2">
+                                        <div class="mx-3">
+                                            <input type="text" class="form-input rounded-full" id="name" name="name" placeholder="Nombre" required data-error="Please enter your name">
+                                        </div>                                 
+                                    </div>
+                                    <div class="w-full sm:w-1/2 md:w-full lg:w-1/2">
+                                        <div class="mx-3">
+                                            <input type="text" placeholder="Correo" id="email" class="form-input rounded-full" name="email" required data-error="Please enter your email">
+                                        </div> 
+                                    </div>
+                                    <div class="w-full">
+                                        <div class="mx-3">
+                                            <input type="text" placeholder="Asunto" id="subject" name="subject" class="form-input rounded-full" required data-error="Please enter your subject">
+                                        </div>
+                                    </div>
+                                    <div class="w-full">
+                                        <div class="mx-3"> 
+                                            <textarea class="form-input rounded-lg" id="message" name="message" placeholder="Your Message" rows="5" data-error="Escribe tu mensaje" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="w-full">
+                                        <div class="submit-button mx-3 mb-3">
+                                            <button class="btn" id="form-submit" type="submit">Enviar Mensaje</button>
+                                        </div>
+                                    </div>
+                                </div>            
+                            </form>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 ml-3">
+                        <div>
+                            <div class="flex flex-wrap mb-6 items-center">
+                                <div class="contact-icon">
+                                    <i class="lni lni-map-marker"></i>
+                                </div>
+                                <p class="pl-3 text-white">
+                                    Blvd. Manuel Ávila Camacho 138 Piso 6, <br>
+                                    Col. Lomas de Chapultepec, CP 11000, CDMX.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap mb-6 items-center">
+                                <div class="contact-icon">
+                                    <i class="lni lni-envelope"></i>
+                                </div>
+                                <p class="pl-3 text-white">
+                                    <a href="#" class="block">ventas@clearchannel.com.mx</a>
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap mb-6 items-center">
+                                <div class="contact-icon">
+                                    <i class="lni lni-phone-set"></i>
+                                </div>
+                                <p class="pl-3 text-white">
+                                    <a href="#" class="block">+(52) 52810392</a>
+                                </p>
+                            </div>
+                        </div>
+                        <object style="border: 1; height: 50%; width: 95%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5536.631105162795!2d-99.21244878424163!3d19.43315388688401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2021f100761f7%3A0x665a310092ac534d!2sPiso+8%2C+Perif.+Blvd.+Manuel+%C3%81vila+Camacho+138%2C+Lomas+de+Chapultepec+V+Secc%2C+11000+Ciudad+de+M%C3%A9xico%2C+CDMX!5e1!3m2!1ses!2smx!4v1544071611242"></object>  
+                    </div>
+                </div>            
             </div> 
         </section>
         <!-- Contact Section End -->   

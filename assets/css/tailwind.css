@@ -1189,8 +1189,8 @@ p {
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
   --bg-opacity: 1;
-  background-color: #FFCB05;
-  background-color: rgba(255, 203, 5, var(--bg-opacity));
+  background-color: #EF3F4A;
+  background-color: rgba(239, 63, 74, var(--bg-opacity));
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 0.75rem;
@@ -1201,8 +1201,8 @@ p {
 
 .btn:hover {
   --bg-opacity: 1;
-  background-color: #EF3F4A;
-  background-color: rgba(239, 63, 74, var(--bg-opacity))
+  background-color: #FFCB05;
+  background-color: rgba(255, 203, 5, var(--bg-opacity));
 }
 
 .sticky {
@@ -1305,6 +1305,24 @@ p {
   margin-bottom: 0.75rem;
 }
 
+.pricing-box {
+  margin: 0.75rem;
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 2.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 0.25rem;
+  transition-duration: 300ms;
+}
+
+.pricing-box:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --bg-opacity: 1;
+  background-color: #00C6D7;
+  background-color: rgba(0, 198, 215, var(--bg-opacity));
+}
+
+
 .team-item {
   margin: 0.75rem;
   text-align: center;
@@ -1370,6 +1388,8 @@ p {
 .client-logo {
   opacity: 0.5;
   transition-duration: 300ms;
+  max-height: 5rem;
+  max-width: 80%;
 }
 
 .client-logo:hover {
