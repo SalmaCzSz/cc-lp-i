@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clear Channel</title>
+        <link rel="stylesheet" href="./css/tailwind.css">
+    </head>
+    <body>
+        <section id="inicio" class="bg-dark-blue pt-48 pb-10">
+            <div class="container">
+                <div class="flex justify-between">
+                    <div class="w-full lg:w-1/2">
+                        <img src="img/logo.png" style="width: 50%;">
+                        <h2 class="text-3xl font-bold leading-snug text-white mb-10 wow fadeInDown" data-wow-delay="1s"> Where <span class="text-bright-yellow">brands</span> meet <span class="text-bright-aqua">people</span>.</h2>
+                        <p class="text-1xl leading-snug text-white mb-10 wow fadeInDown" data-wow-delay="1.5s">
+                            Conectamos marcas y personas globalmente. Con un portafolio diverso,
+                            creamos campañas poderosas, utilizando datos de ubicación para
+                            iniciar conversaciones impactantes fuera de casa.
+                        </p>
+                    </div>
+                    <div class="w-full lg:w-3/4">
+                        <canvas class="billboard"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- THREE JS -->
+        <script src="https://unpkg.com/three@0.146.0/build/three.min.js"></script>
+        <script src="https://unpkg.com/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.min.js"></script> -->
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <!-- MIS SCRIPTS -->
+        <script src="./js/landing.js"></script>
+    </body>
+</html>
