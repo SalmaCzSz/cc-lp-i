@@ -5,14 +5,54 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Clear Channel</title>
-        <link rel="stylesheet" href="./css/tailwind.css">
+        <link rel="stylesheet" href="./assets/css/tailwind.css">
+        <link rel="stylesheet" href="./assets/css/LineIcons2.0.css">
     </head>
     <body>
+        <header id="header-wrap" class="relative">
+            <!-- Navbar Start -->      
+            <div class="navigation fixed top-0 left-0 w-full z-30 duration-300">
+                <div class="container">
+                    <nav class="navbar py-2 navbar-expand-lg flex justify-between items-center relative duration-300">
+                        <a class="navbar-brand" href="index.html">
+                          <img src="./assets/img/logo.png" alt="Logo" style="width: 30%;">
+                        </a>
+                        <button class="navbar-toggler focus:outline-none block lg:hidden" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+      
+                        <div class="collapse navbar-collapse hidden lg:block duration-300 shadow absolute top-100 left-0 mt-full bg-dark-blue z-20 px-5 py-3 w-full lg:static lg:bg-transparent lg:shadow-none" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto justify-center items-center lg:flex">
+                                <li class="nav-item">
+                                  <a class="page-scroll active" href="#inicio">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="page-scroll" href="#productos">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="page-scroll" href="#servicios">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="page-scroll" href="#clientes">Clientes</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="page-scroll" href="#contacto">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Navbar End -->
+          </header>
+
         <section id="inicio" class="bg-dark-blue pt-48 pb-10">
             <div class="container">
                 <div class="flex justify-between">
                     <div class="w-full lg:w-1/2">
-                        <img src="img/logo.png" style="width: 50%;">
+                        <h2 class="text-5xl font-bold leading-snug text-white wow fadeInUp" data-wow-delay="0.5s">Clear Channel</h2>
                         <h2 class="text-3xl font-bold leading-snug text-white mb-10 wow fadeInDown" data-wow-delay="1s"> Where <span class="text-bright-yellow">brands</span> meet <span class="text-bright-aqua">people</span>.</h2>
                         <p class="text-1xl leading-snug text-white mb-10 wow fadeInDown" data-wow-delay="1.5s">
                             Conectamos marcas y personas globalmente. Con un portafolio diverso,
@@ -27,6 +67,122 @@
             </div>
         </section>
 
+        <!-- Contact Section Start -->   
+        <section id="contacto" class="bg-dark-blue pb-10">
+            <div class="container">
+                <div class="bg-bright-blue rounded">
+                    <div class="text-center">
+                        <h2 class="section-heading mb-3">Contacto</h2>
+                    </div>
+                    <div class="flex mb-10">
+                        <div class="w-full md:w-1/2">
+                            <div class="contact ml-3">
+                                <h2 class="uppercase font-bold text-xl text-white mb-5 ml-3">Contactános</h2>
+                                <form id="contactForm" action="assets/contact.php">
+                                    <div class="flex flex-wrap">
+                                        <div class="w-full sm:w-1/2 md:w-full lg:w-1/2">
+                                            <div class="mx-3">
+                                                <input type="text" class="form-input rounded-full" id="name" name="name" placeholder="Nombre" required data-error="Please enter your name">
+                                            </div>                                 
+                                        </div>
+                                        <div class="w-full sm:w-1/2 md:w-full lg:w-1/2">
+                                            <div class="mx-3">
+                                                <input type="text" placeholder="Correo" id="email" class="form-input rounded-full" name="email" required data-error="Please enter your email">
+                                            </div> 
+                                        </div>
+                                        <div class="w-full">
+                                            <div class="mx-3">
+                                                <input type="text" placeholder="Asunto" id="subject" name="subject" class="form-input rounded-full" required data-error="Please enter your subject">
+                                            </div>
+                                        </div>
+                                        <div class="w-full">
+                                            <div class="mx-3"> 
+                                                <textarea class="form-input rounded-lg" id="message" name="message" placeholder="Your Message" rows="5" data-error="Escribe tu mensaje" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="w-full">
+                                            <div class="submit-button mx-3 mb-3">
+                                                <button class="btn" id="form-submit" type="submit">Enviar Mensaje</button>
+                                            </div>
+                                        </div>
+                                    </div>            
+                                </form>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 ml-3">
+                            <div>
+                                <div class="flex flex-wrap  items-center">
+                                    <div class="contact-icon">
+                                        <i class="lni lni-map-marker"></i>
+                                    </div>
+                                    <p class="pl-3 text-white">
+                                        Blvd. Manuel Ávila Camacho 138 Piso 6, <br>
+                                        Col. Lomas de Chapultepec, CP 11000, CDMX.
+                                    </p>
+                                </div>
+                                <div class="flex flex-wrap items-center">
+                                    <div class="contact-icon">
+                                        <i class="lni lni-envelope"></i>
+                                    </div>
+                                    <p class="pl-3 text-white">
+                                        <a href="#" class="block">ventas@clearchannel.com.mx</a>
+                                    </p>
+                                </div>
+                                <div class="flex flex-wrap mb-6 items-center">
+                                    <div class="contact-icon">
+                                        <i class="lni lni-phone-set"></i>
+                                    </div>
+                                    <p class="pl-3 text-white">
+                                        <a href="#" class="block">+(52) 52810392</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <object style="border: 1; height: 50%; width: 95%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5536.631105162795!2d-99.21244878424163!3d19.43315388688401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2021f100761f7%3A0x665a310092ac534d!2sPiso+8%2C+Perif.+Blvd.+Manuel+%C3%81vila+Camacho+138%2C+Lomas+de+Chapultepec+V+Secc%2C+11000+Ciudad+de+M%C3%A9xico%2C+CDMX!5e1!3m2!1ses!2smx!4v1544071611242"></object>  
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <!-- Contact Section End -->   
+      
+
+        <!-- Footer Section Start -->
+        <footer id="footer" class="bg-bright-blue py-16">
+            <div class="container">
+                <div class="w-full justify-center flex" >
+                    <div class="">
+                        <ul class="social-icons flex">
+                            <li class="mx-2">
+                                <a href="#"
+                                class="footer-icon hover:bg-indigo-500">
+                                <i class="lni lni-facebook-original" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#"
+                                class="footer-icon hover:bg-blue-400">
+                                <i class="lni lni-twitter-original" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#"
+                                class="footer-icon hover:bg-red-500">
+                                <i class="lni lni-instagram-original" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>     
+        </footer> 
+        <!-- Footer Section End -->
+
+        <!-- Go to Top Link -->
+        <a href="#" class="back-to-top w-10 h-10 fixed bottom-0 right-0 mb-5 mr-5 flex items-center justify-center rounded-full bg-bright-aqua text-white text-lg z-20 duration-300 hover:bg-blue-400">
+            <i class="lni lni-arrow-up"></i>
+        </a>
+
         <!-- THREE JS -->
         <script src="https://unpkg.com/three@0.146.0/build/three.min.js"></script>
         <script src="https://unpkg.com/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
@@ -34,6 +190,7 @@
         <!-- GSAP -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
         <!-- MIS SCRIPTS -->
-        <script src="./js/landing.js"></script>
+        <script src="./assets/js/landing.js"></script>
+        <script src="./assets/js/main.js"></script>
     </body>
 </html>

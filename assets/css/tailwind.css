@@ -1189,8 +1189,8 @@ p {
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
   --bg-opacity: 1;
-  background-color: #3182ce;
-  background-color: rgba(49, 130, 206, var(--bg-opacity));
+  background-color: #FFCB05;
+  background-color: rgba(255, 203, 5, var(--bg-opacity));
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 0.75rem;
@@ -1201,8 +1201,8 @@ p {
 
 .btn:hover {
   --bg-opacity: 1;
-  background-color: #4299e1;
-  background-color: rgba(66, 153, 225, var(--bg-opacity));
+  background-color: #EF3F4A;
+  background-color: rgba(239, 63, 74, var(--bg-opacity))
 }
 
 .sticky {
@@ -1475,23 +1475,23 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   --bg-opacity: 1;
   background-color: #fff;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
   border-radius: 9999px;
   font-size: 0.875rem;
   --text-opacity: 1;
-  color: #000434;
-  color: rgba(0, 4, 52, var(--bg-opacity));
+  color: #0099D8;
+  color: rgba(0, 153, 216, var(--bg-opacity));
   transition-duration: 300ms;
 }
 
 .footer-icon:hover {
   --text-opacity: 1;
-  color: #0099D8;
-  color: rgba(0, 153, 216, var(--bg-opacity));
+  color:  #000434;
+  color: rgba(0, 4, 52, var(--bg-opacity));
 }
 
 @media (min-width: 640px){
