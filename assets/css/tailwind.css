@@ -1016,6 +1016,10 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.pb-48{
+  padding-bottom: 12rem;
+}
+
 .pt-48{
   padding-top: 12rem;
 }
