@@ -112,11 +112,16 @@ let anuncio = null
 
 const gltLoader = new THREE.GLTFLoader(loadingManager)
 gltLoader.load(
-    './assets/anuncio/scene.gltf',
+    './assets/anuncio/Pantalla_12x6.glb',
     (gltf) => {
         anuncio = gltf.scene
 
-        const radius = 0.2
+        anuncio.position.x = 0.5
+        anuncio.rotation.x = -0.1
+        anuncio.rotation.y = -2.3
+        anuncio.position.y = -0.5000
+
+        const radius = 0.009
         anuncio.scale.set(radius, radius, radius)
 
         scene.add(anuncio)
@@ -220,12 +225,9 @@ scene.add(camera)
 /**
  * Light
  */
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1.1)
-directionalLight.position.set(0, 1, 0)
-directionalLight.color.set(0xf0f0f0); 
-directionalLight.shadow.darkness = 0.4; 
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
+directionalLight.position.set(0, 5, 5)
 directionalLight.castShadow = true
-
 scene.add(directionalLight)
 
 
