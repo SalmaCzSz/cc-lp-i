@@ -118,11 +118,11 @@ gltLoader.load(
 
         anuncio.position.x = 0.5
         anuncio.rotation.x = -0.1
-        anuncio.rotation.y = -2.3
-        anuncio.position.y = -0.5000
+        anuncio.rotation.y = -2.2
+        anuncio.position.y = -1.3
 
-        const radius = 0.009
-        anuncio.scale.set(radius, radius, radius)
+        const radius = 0.0099
+        anuncio.scale.set(radius*2.75, radius, radius*2.5)
 
         scene.add(anuncio)
     }
@@ -243,7 +243,7 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.shadowMap.enabled = true
 renderer.shadowMap.type = THREE.PCFSoftShadowMap
-renderer.setSize(sizes.width, sizes.height)
+renderer.setSize(sizes.width * 0.50, sizes.height * 0.50)
 renderer.render(scene, camera)
 
 
@@ -261,7 +261,7 @@ const tick = () => {
     renderer.render(scene, camera)
 
     if (!!anuncio) {
-        anuncio.position.y = Math.sin(elapsedTime * .8) * .1 - 0.1
+        anuncio.position.y = Math.sin(elapsedTime * .1) * 0.3 - 1.5
     }
 
     window.requestAnimationFrame(tick) 
