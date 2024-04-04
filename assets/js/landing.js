@@ -261,7 +261,7 @@ const tick = () => {
     renderer.render(scene, camera)
 
     if (!!anuncio) {
-        anuncio.position.y = Math.sin(elapsedTime * .1) * 0.3 - 1.5
+        anuncio.position.y = Math.sin(elapsedTime * .1) * 0.3 - 1
     }
 
     window.requestAnimationFrame(tick) 
